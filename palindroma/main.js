@@ -3,10 +3,14 @@
 // ask for a word
 var word = prompt("Please enter a word: ");
 
+//print result
+if (isPalindrome(word) == true) {
+    console.log("The word \"" + word + "\" entered is a palindromic word.");
+} else {
+    console.log("The word \"" + word + "\" entered is not a palindromic word.");
+}
+
 // check if the word is palindrome
 function isPalindrome(str) {
     return str == str.split("").reverse().join("");
 }
-
-// print result
-console.log(isPalindrome(word));
